@@ -1,4 +1,4 @@
 euler-algorithms
 ================
 
-My datastructures and algorithms workspace and Project Euler Journal
+My Datas Structures & Algorithms workspace and Project Euler Journal
