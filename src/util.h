@@ -127,4 +127,23 @@ template<typename T> inline const char* string_from_num(T n) {
 	oss << n;
 	return oss.str().c_str();
 }
+// Greatest Common Divisor = Greatest Common Factor = Euclid's Algorithm
+template <typename T> inline T gcd(T a, T b) {
+	T t;
+	while (b != 0) {
+		t = b;
+		b = a % b;
+		a = t;
+	}
+
+	return a;
+}
+// Least Common Multiple for two numbers
+template <typename T> T inline lcm(T a, T b) {
+	if (a < b) {
+		return ( a / gcd(a,b) * b);
+	} else {
+		return ( b / gcd(a,b) * a);
+	}
+}
 #endif
